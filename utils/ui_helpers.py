@@ -1,3 +1,5 @@
+from typing import Sequence, Tuple
+
 import streamlit as st
 
 from utils.constants import WORKSHOP_SUBTITLE, WORKSHOP_TITLE
@@ -38,7 +40,7 @@ def render_sidebar_note() -> None:
         )
 
 
-def render_metric_strip(items: list[tuple[str, str]]) -> None:
+def render_metric_strip(items: Sequence[Tuple[str, str]]) -> None:
     columns = st.columns(len(items))
     for column, (label, value) in zip(columns, items):
         column.metric(label, value)

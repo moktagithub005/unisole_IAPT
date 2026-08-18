@@ -1,4 +1,12 @@
+import sys
+from pathlib import Path
+
 import streamlit as st
+
+
+ROOT_DIR = Path(__file__).resolve().parents[1]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
 
 from utils.constants import DAY_TWO_TAGLINE, DEFAULT_SYSTEM_PROMPT, RESEARCH_EXPERIMENT_MODES
 from utils.groq_client import get_default_model, get_groq_api_key, groq_chat_completion

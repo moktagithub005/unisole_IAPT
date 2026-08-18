@@ -13,7 +13,7 @@ def get_groq_api_key() -> Optional[str]:
 
 
 def get_default_model() -> str:
-    return os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+    return os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
 
 
 def get_groq_client() -> Optional[Groq]:

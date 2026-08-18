@@ -73,3 +73,102 @@ REFLECTION_QUESTIONS = [
     "What kind of problem will you still verify manually or from a trusted source?",
     "What would you like to learn tomorrow to make your prompting more reliable?",
 ]
+
+DAY_TWO_TITLE = "Day 2: AI as a Research Instrument"
+DAY_TWO_TAGLINE = (
+    "A participant workspace for the most important shift of the workshop: moving from AI as a chatbot "
+    "to AI as a careful research companion for literature, mathematics, and scientific workflows."
+)
+
+DAY_TWO_OBJECTIVES = [
+    "Understand why AI should be treated as a scientific instrument rather than an answer machine.",
+    "Build a better literature-review workflow using seed papers, citation paths, and reading priorities.",
+    "Use AI to support mathematical reasoning without outsourcing scientific judgment.",
+    "Leave with reusable research workflows that still matter after the workshop ends.",
+]
+
+DAY_TWO_MODULES = [
+    {
+        "title": "Module 1: AI as the Next Scientific Instrument",
+        "duration": "15-20 min",
+        "focus": "Reframe AI as a tool that expands scientific observation, comparison, and interpretation.",
+        "outcomes": [
+            "See why research needs trustworthy answers rather than fast answers.",
+            "Distinguish consumer AI tasks from scientific AI tasks.",
+            "Connect the AI shift directly to physics teaching and research practice.",
+        ],
+    },
+    {
+        "title": "Module 2: Finding the Right Scientific Literature",
+        "duration": "20 min",
+        "focus": "Move from random paper collection to a structured reading pathway led by a seed paper strategy.",
+        "outcomes": [
+            "Identify foundational, review, method, application, and frontier papers.",
+            "Use AI to organize reading order instead of replacing deep reading.",
+            "Translate a topic into a practical literature-discovery workflow.",
+        ],
+    },
+    {
+        "title": "Module 3: AI as a Math and Derivation Assistant",
+        "duration": "20-25 min",
+        "focus": "Use AI to unpack derivations, assumptions, and symbols while keeping verification central.",
+        "outcomes": [
+            "Break intimidating derivations into meaningful checkpoints.",
+            "Ask for assumptions, missing steps, and possible error points.",
+            "Develop a repeatable verification habit for equations and reasoning.",
+        ],
+    },
+    {
+        "title": "Module 4: AI for Simulation and Data Analysis",
+        "duration": "20-25 min",
+        "focus": "Turn research or classroom datasets into interpretable workflows, plots, and next-step questions.",
+        "outcomes": [
+            "Translate a physics task into a simulation or analysis workflow.",
+            "Use AI to suggest plots, checks, and computational steps.",
+            "Leave with prompts that support future classroom or research projects.",
+        ],
+    },
+]
+
+RESEARCH_EXPERIMENT_MODES = {
+    "Instrument Mindset": (
+        "Frame AI as a scientific instrument that supports understanding, comparison, and discovery "
+        "without replacing scientific judgment."
+    ),
+    "Literature Mapper": (
+        "Build a paper-reading strategy from a research question by identifying seed papers, paper types, "
+        "search priorities, and reading order."
+    ),
+    "Derivation Coach": (
+        "Explain equations carefully, expose assumptions, identify possible failure points, "
+        "and emphasize what must be checked by a human."
+    ),
+    "Simulation Planner": (
+        "Translate a physics question into a practical simulation or data-analysis plan with variables, "
+        "plots, checks, and interpretation cautions."
+    ),
+}
+
+RESEARCH_PROMPT_PATTERNS = [
+    {
+        "title": "Pattern 1: Build my reading path",
+        "body": (
+            "I am starting work on [topic]. Help me build a reading sequence with one seed paper type, "
+            "2-3 foundational themes, the kinds of papers I should read next, and what I should look for in each."
+        ),
+    },
+    {
+        "title": "Pattern 2: Explain a derivation safely",
+        "body": (
+            "Explain the derivation of [equation/topic] step by step. State all assumptions, define each symbol, "
+            "show where a learner may get confused, and tell me what I should verify manually."
+        ),
+    },
+    {
+        "title": "Pattern 3: Turn a research idea into a workflow",
+        "body": (
+            "I want to study [problem]. Suggest a simulation or data-analysis workflow with inputs, outputs, "
+            "methods, plots, expected patterns, and limits of the approach."
+        ),
+    },
+]

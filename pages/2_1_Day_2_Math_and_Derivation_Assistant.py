@@ -73,7 +73,7 @@ tab1, tab2, tab3, tab4 = st.tabs(
 with tab1:
     equation_topic = st.text_area(
         "Equation, derivation, or concept",
-        value="Derive the electric field using Gauss's law for an infinite line charge.",
+        value=r"Derive the electric field $E(r)$ for an infinite line charge using Gauss's law, $\nabla \cdot E = \frac{\rho}{\varepsilon_0}$.",
         height=110,
     )
     audience = st.selectbox(
@@ -115,7 +115,7 @@ with tab2:
         "Paste the derivation or describe the method",
         value=(
             "We choose a cylindrical Gaussian surface and assume symmetry so that the electric field "
-            "has constant magnitude at all points on the curved surface."
+            r"$E(r)$ is constant in magnitude on the curved surface, giving $\Phi_E = E(2\pi r L)$."
         ),
         height=130,
     )
@@ -147,7 +147,7 @@ with tab2:
 with tab3:
     stuck_step = st.text_area(
         "Which step feels unclear or incorrect?",
-        value="I do not understand why the flux becomes E(2πrL) in this step.",
+        value=r"I do not understand why the electric flux becomes $\Phi_E = E(2\pi r L)$ in this step.",
         height=110,
     )
     if st.button("Repair this step", key="repair_step", use_container_width=True):
@@ -178,7 +178,7 @@ with tab3:
 with tab4:
     final_claim = st.text_area(
         "Equation or conclusion to verify",
-        value="The resulting electric field is proportional to 1/r for an infinite line charge.",
+        value=r"The resulting electric field satisfies $E(r) \propto \frac{1}{r}$ for an infinite line charge.",
         height=90,
     )
     if st.button("Build my verification checklist", key="verify_math", use_container_width=True):

@@ -66,7 +66,7 @@ tab1, tab2, tab3, tab4 = st.tabs(
 with tab1:
     problem = st.text_area(
         "Physics problem or dataset task",
-        value="Simulate the damped harmonic oscillator and study how damping changes the motion over time.",
+        value=r"Simulate the damped harmonic oscillator, $m\ddot{x} + c\dot{x} + kx = 0$, and study how damping changes the motion over time.",
         height=110,
     )
     experience = st.selectbox(
@@ -106,7 +106,7 @@ with tab1:
 with tab2:
     method_notes = st.text_area(
         "Describe the model, code idea, or dataset",
-        value="I have time-series displacement data and want to compare underdamped, overdamped, and critically damped behavior.",
+        value=r"I have time-series displacement data $x(t)$ and want to compare underdamped, overdamped, and critically damped behavior.",
         height=110,
     )
     if st.button("Suggest variables and plots", key="plot_suggester", use_container_width=True):
@@ -138,8 +138,8 @@ with tab3:
     output_summary = st.text_area(
         "Observed result or output summary",
         value=(
-            "As damping increases, the oscillations decay more quickly, and the overdamped case shows no oscillation "
-            "but a slow return to equilibrium."
+            "As damping $c$ increases, the oscillations decay more quickly, and the overdamped case shows no oscillation "
+            r"but a slow return to equilibrium with $x(t) \rightarrow 0$ over time."
         ),
         height=120,
     )

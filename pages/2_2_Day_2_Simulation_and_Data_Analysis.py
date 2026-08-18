@@ -46,12 +46,12 @@ with col1:
     st.write(
         "Participants often leave an AI workshop inspired but unsure how to apply it to real scientific work. "
         "This page closes that gap by helping them turn a physics question into a practical simulation or "
-        "data-analysis workflow they can adapt later."
+        "data-analysis workflow they can adapt later in their teaching or research."
     )
 with col2:
     render_section_card(
         "Right expectation",
-        "AI can help design a workflow, suggest plots, and point to useful checks.",
+        "AI can help design a workflow, suggest plots, and highlight useful checks.",
     )
     render_section_card(
         "Important limit",

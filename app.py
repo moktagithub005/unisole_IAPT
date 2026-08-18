@@ -80,5 +80,5 @@ with col2:
                 st.write(f"- {item}")
 
 st.success(
-    "Open the Day 2 pages from the sidebar to run the live participant activities for literature, mathematics, and research workflows."
+    "Open the Day 2 pages from the sidebar to run the live participant activities for literature review, mathematical reasoning, and research workflows."
 )

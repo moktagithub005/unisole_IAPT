@@ -4,7 +4,7 @@ WORKSHOP_SUBTITLE = "UNISOLE x IAPT"
 DAY_ONE_TITLE = "Day 1: Prompt Engineering for Physics"
 DAY_ONE_TAGLINE = (
     "A participant companion for the live workshop: frame physics questions, test prompts with the speaker, "
-    "verify answers, and leave with reusable prompting habits."
+    "verify answers, and leave with reusable prompting habits that hold up under scrutiny."
 )
 
 DAY_ONE_OBJECTIVES = [
@@ -77,7 +77,7 @@ REFLECTION_QUESTIONS = [
 DAY_TWO_TITLE = "Day 2: AI as a Research Instrument"
 DAY_TWO_TAGLINE = (
     "A participant workspace for the most important shift of the workshop: moving from AI as a chatbot "
-    "to AI as a careful research companion for literature, mathematics, and scientific workflows."
+    "to AI as a careful research companion for literature review, mathematics, and scientific workflows."
 )
 
 DAY_TWO_OBJECTIVES = [
